@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LTS website">
+    <meta name="Author" content="Tech star">
+    <title>LTS</title>
+    <link rel="icon" href="images/delicious_tacos_1000x667.png" >
+    <link rel="stylesheet" href="LTS.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Taco shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="hours.html">Store </a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="About.html">About </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2 class="hero__h2">Welcome!</h2>
+        <figure>
+            <img src="images/LTS image.png" alt="LTS" title="Little taco shop" width="1000" height="667">
+            <figcaption class="offscreen">Tacos and a drink</figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <section id="menu" class="section__menu menu">
+        <h2 class="menu__h2">Our Menu</h2>
+        <table class="menu__container">
+        <caption  class="offscreen">Our Tacos</caption>
+        <thead >
+        <tr>
+        <th class="menu__header">Tacos</th>
+        <th class="menu__header">Quantity</th>
+        <th class="menu__header">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="menu__item menu__cr" rowspan="3">
+            Crunchy
+        </td>
+        </tr>
+        <tr>
+            <td class="menu__item">1</td>
+            <td class="menu__item">$1.50</td>
+        </tr>
+        <tr>
+            <td class="menu__item"> 2</td>
+            <td class="menu__item">$2.50</td>
+        </tr>
+        <tr>
+            <td class="menu__item">3</td>
+            <td class="menu__item">$3.50</td>
+        </tr>
+        <tr>
+        <td class="menu__item menu__soft " rowspan="3">Soft</td>
+        </tr>
+        <tr>
+            <td class="menu__item">1</td>
+            <td class="menu__item">$1.50</td></tr>
+        </tr>
+        <tr>
+            <td class="menu__item"> 2</td>
+            <td class="menu__item">$2.50</td>
+        </tr>
+        <tr>
+            <td class="menu__item">3</td>
+            <td class="menu__item">$3.50</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td class="menu__item menu__cs" colspan="3">
+                    Chips & Salsa $2
+                </td>
+                </tr>
+        </tfoot>
+        </tbody>
+        </table>
+        </section>
+      
+        </main>
+           
+        <footer class="footer">
+            <p>
+                <span class="nowrap">Copywrite &copy; <time id="year"></time></span>
+                <span class="nowrap">Little Taco Shop</span> 
+            </p>
+        </footer>
+        <script>
+            const year = document.getElementById("year")
+            const thisYear = new Date().getFullYear()
+            year.setAttribute("datetime", thisYear)
+            year.textContent = thisYear
+        </script>
+</body>
+</html>
